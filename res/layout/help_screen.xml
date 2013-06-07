@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99ccff" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:editable="false"
+        android:enabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:text=" This apllication is used to handle incoming calls in different mode,it contains 3 modes \n 
+        1. Normal Mode \n
+        2. Meeting Mode \n
+        3. Busy Mode \n
+        \n
+        NORMAL MODE \n
+           In normal mode all incoming calls are like normal phone feature. \n
+           \n
+        MEETING MODE \n
+           In meeting mode you should select some contacts and set or add a message.\n
+           All incoming calls are rejected automatically and if the coming  \n
+           \n
+           \n
+       " >
+
+    </EditText>
+
+</RelativeLayout>

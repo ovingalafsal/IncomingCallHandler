@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ProfileHandling</string>
+    <string name="action_settings">Exit</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="spinner_heading">Choose Profile</string>
+    <string-array name="spinner_items">
+        <item >Normal</item>
+        <item >Meeting</item>
+        <item >Busy</item>
+    </string-array>
+
+</resources>
