@@ -1,7 +1,6 @@
 package com.example.profilehandling;
 
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Method;
 
@@ -9,7 +8,6 @@ import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.Context;
-import android.content.res.AssetFileDescriptor;
 import android.database.Cursor;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
@@ -27,6 +25,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
+import android.view.Window;
+import android.view.WindowManager.LayoutParams;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -43,6 +43,16 @@ public class BusyModeActivity extends Activity {
 	PopupWindow pw;
 	View layout;
 	ImageView contactImage;
+	private Window wind;
+	@Override
+	protected void onResume() {
+		super.onResume();
+		wind = this.getWindow();
+	    wind.addFlags(LayoutParams.FLAG_DISMISS_KEYGUARD);
+	    wind.addFlags(LayoutParams.FLAG_SHOW_WHEN_LOCKED);
+	    wind.addFlags(LayoutParams.FLAG_TURN_SCREEN_ON);
+	}
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
